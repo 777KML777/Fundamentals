@@ -1,0 +1,28 @@
+<!-- Exemplo estático  - hora estática com js Server side-->
+<html>
+
+    <head>
+        <title>Hora Certa???</title>
+        <style>
+            html {
+                color: #eeeb;
+                background-color: #333;
+                font-size: 5rem;
+
+            }
+        </style>
+        <script>
+            function atualizarHora() {
+                const span = document.querySelector('span');
+                    span.textContent =  new Date().toLocaleTimeString();
+                // document.querySelector('span').textContent = 
+                //     new Date().toLocaleDateString('pt-BR');
+            }
+            setInterval(atualizarHora, 1000);
+        </script>
+    </head>
+
+    <body><b>Hora certa:</b>
+        <span>17:03:25</span> 
+    </body>
+</html>
